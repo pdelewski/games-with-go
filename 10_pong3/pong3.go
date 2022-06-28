@@ -6,6 +6,7 @@ import (
 	"time"
 
 	noise "github.com/maxproske/games-with-go/10_package_noise"
+	"github.com/pdelewski/autotel/rtlib"
 	"github.com/veandco/go-sdl2/sdl" // go get github.com/veandco/go-sdl2/sdl
 )
 
@@ -218,6 +219,7 @@ func drawNumber(pos pos, color color, size int, num int, pixels []byte) {
 }
 
 func main() {
+	rtlib.SumoAutoInstrument()
 	// Added after EP06 to address macosx issues
 	err := sdl.Init(sdl.INIT_EVERYTHING)
 	if err != nil {
@@ -247,8 +249,8 @@ func main() {
 
 	// Create a renderer.
 	renderer, err := sdl.CreateRenderer(
-		window, // Associated with a *Window
-		-1,     // index int
+		window,                   // Associated with a *Window
+		-1,                       // index int
 		sdl.RENDERER_ACCELERATED) // flags uint32 (hardware accelerated)
 	if err != nil {
 		fmt.Println(err)
