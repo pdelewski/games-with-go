@@ -6,13 +6,13 @@ package main
 //   Hill-climbing algorithm find a random place to start, and changes one thing. If it improves, make that change again.
 import (
 	"fmt"
+	noise "github.com/maxproske/games-with-go/10_package_noise"
+	"github.com/pdelewski/autotel/rtlib"
+	. "github.com/pdelewski/games-with-go/18_ui/apt"
+	. "github.com/pdelewski/games-with-go/18_ui/gui"
+	sdl "github.com/veandco/go-sdl2/sdl"
 	"math/rand"
 	"time"
-
-	noise "github.com/maxproske/games-with-go/10_package_noise"
-	. "github.com/maxproske/games-with-go/18_ui/apt"
-	. "github.com/maxproske/games-with-go/18_ui/gui"
-	sdl "github.com/veandco/go-sdl2/sdl"
 )
 
 var winWidth, winHeight int = 600, 600
@@ -99,7 +99,7 @@ func (p *picture) Mutate() {
 }
 
 func main() {
-
+	rtlib.SumoAutoInstrument()
 	// Check what best performing, most reliable renderer SDL is using
 	// (direct3d on windows, opengl on linux, or software for just sdl)
 	sdl.LogSetAllPriority(sdl.LOG_PRIORITY_VERBOSE)
