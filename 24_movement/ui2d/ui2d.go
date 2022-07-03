@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/maxproske/games-with-go/24_movement/game"
+	"github.com/pdelewski/games-with-go/24_movement/game"
 	"github.com/veandco/go-sdl2/sdl"
 )
 

@@ -1,0 +1,4 @@
+github.com/maxproske/games-with-go v0.0.0-20180714054349-737eda4bc8e5 h1:Cg+irmYbPsRCv2oNUeOJ50+fHt8W/hnyeBoo+X2hJdw=
+github.com/maxproske/games-with-go v0.0.0-20180714054349-737eda4bc8e5/go.mod h1:/SLw7H7FIf5z2OmLIuwgAGrFSgUoCNTMVOTQ1wDsAbc=
+github.com/veandco/go-sdl2 v0.4.24 h1:J+OCnPp0yfas4DAG13e3kIgC84mNxWGa3gpWYxrQQfI=
+github.com/veandco/go-sdl2 v0.4.24/go.mod h1:OROqMhHD43nT4/i9crJukyVecjPNYYuCofep6SNiAjY=
