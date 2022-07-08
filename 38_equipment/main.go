@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	rtlib.SumoAutoInstrument()
+	rtlib.AutotelEntryPoint__()
 	// Make new game
 	game := game.NewGame(1)
 	go func() {
