@@ -99,7 +99,7 @@ func (p *picture) Mutate() {
 }
 
 func main() {
-	rtlib.SumoAutoInstrument()
+	rtlib.AutotelEntryPoint__()
 	// Check what best performing, most reliable renderer SDL is using
 	// (direct3d on windows, opengl on linux, or software for just sdl)
 	sdl.LogSetAllPriority(sdl.LOG_PRIORITY_VERBOSE)
