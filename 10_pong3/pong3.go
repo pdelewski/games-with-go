@@ -219,7 +219,7 @@ func drawNumber(pos pos, color color, size int, num int, pixels []byte) {
 }
 
 func main() {
-	rtlib.SumoAutoInstrument()
+	rtlib.AutotelEntryPoint__()
 	// Added after EP06 to address macosx issues
 	err := sdl.Init(sdl.INIT_EVERYTHING)
 	if err != nil {
