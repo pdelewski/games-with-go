@@ -7,7 +7,6 @@ import (
 
 	noise "github.com/maxproske/games-with-go/10_package_noise"
         "go.opentelemetry.io/contrib/instrgen/rtlib"
-        __atel_otel "go.opentelemetry.io/otel"
         "github.com/veandco/go-sdl2/sdl"        // go get github.com/veandco/go-sdl2/sdl
 
 )
@@ -221,7 +220,7 @@ func drawNumber(pos pos, color color, size int, num int, pixels []byte) {
 }
 
 func main() {
-	rtlib.AutotelEntryPoint__()
+	rtlib.AutotelEntryPoint()
 	// Added after EP06 to address macosx issues
 	err := sdl.Init(sdl.INIT_EVERYTHING)
 	if err != nil {
@@ -348,11 +347,11 @@ func main() {
 		ball.draw(pixels)
 
 		// Update SDL2 texture
-		tex.Update(
-			nil,        // rect *Rect
-			pixels,     // pixels []byte
-			winWidth*4, // pitch int
-		)
+//		tex.Update(
+//			nil,        // rect *Rect
+//			pixels,     // pixels []byte
+//			winWidth*4, // pitch int
+//		)
 		// Copy it to the renderer
 		renderer.Copy(tex, nil, nil) // Copy
 		renderer.Present()           // Present
