@@ -6,8 +6,10 @@ import (
 	"time"
 
 	noise "github.com/maxproske/games-with-go/10_package_noise"
-	"github.com/pdelewski/autotel/rtlib"
-	"github.com/veandco/go-sdl2/sdl" // go get github.com/veandco/go-sdl2/sdl
+        "go.opentelemetry.io/contrib/instrgen/rtlib"
+        __atel_otel "go.opentelemetry.io/otel"
+        "github.com/veandco/go-sdl2/sdl"        // go get github.com/veandco/go-sdl2/sdl
+
 )
 
 // Initialize constants.

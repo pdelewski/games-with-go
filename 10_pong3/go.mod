@@ -1,19 +1,19 @@
-module github.com/pdelewski/games-with-go/10_pong3
+module delak.pong
 
-go 1.18
+go 1.19
 
 require (
 	github.com/maxproske/games-with-go v0.0.0-20180714054349-737eda4bc8e5
-	github.com/pdelewski/autotel v0.1.0
-	github.com/veandco/go-sdl2 v0.4.24
+	github.com/veandco/go-sdl2 v0.4.35
+	go.opentelemetry.io/contrib/instrgen v0.0.0-20230518141741-e8a2a70fe9a3
+	go.opentelemetry.io/otel v1.15.1
 )
 
 require (
-	github.com/go-logr/logr v1.2.3 // indirect
+	github.com/go-logr/logr v1.2.4 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
-	go.opentelemetry.io/otel v1.7.0 // indirect
-	go.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.7.0 // indirect
-	go.opentelemetry.io/otel/sdk v1.7.0 // indirect
-	go.opentelemetry.io/otel/trace v1.7.0 // indirect
-	golang.org/x/sys v0.0.0-20211019181941-9d821ace8654 // indirect
+	go.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.15.1 // indirect
+	go.opentelemetry.io/otel/sdk v1.15.1 // indirect
+	go.opentelemetry.io/otel/trace v1.15.1 // indirect
+	golang.org/x/sys v0.8.0 // indirect
 )
